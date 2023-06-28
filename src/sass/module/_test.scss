@@ -1,0 +1,10 @@
+@use "global" as *;
+
+/* K! フォントのテスト */
+.test {
+    font-size: rem(100);
+}
+
+.test--english {
+    font-family: $english-family;
+}

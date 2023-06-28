@@ -1,0 +1,36 @@
+/* K! 作成 */
+
+@use 'global' as *;
+
+.section-header {
+    color: $blue;
+    text-align: center;
+}
+
+.section-header__ja-title {
+    font-size: rem(13);
+    font-weight: $bold;
+    letter-spacing: 0.05em;
+    line-height: calc(32 / 13);
+    font-family: $english-family;
+
+    /* PC版（レスポンシブ） */
+    @include mq(md) {
+        font-size: rem(14);
+    }
+}
+
+.section-header__english-title {
+    font-size: rem(30);
+    font-weight: $bold;
+    letter-spacing: 0.05em;
+    line-height: calc(37 / 30);
+    font-family: $english-family;
+    /* 大文字に */
+    text-transform: uppercase;
+
+    /* PC（レスポンシブ） */
+    @include mq(md) {
+        font-size: rem(36);
+    }
+}

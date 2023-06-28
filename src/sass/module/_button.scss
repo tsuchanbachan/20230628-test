@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.button {
+    text-align: center;
+    display: inline-block;
+    font-size: rem(14);
+    font-weight: $bold;
+    color: $white;
+    width: rem(200);
+    /* テキストを大文字に */
+    text-transform:uppercase;
+
+    /* カンプのプロパティからコピペ */
+    background: transparent linear-gradient(90deg, #7633A4 0%, #250D65 100%) 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+
+    /* 高さの合わせ方 */
+    /* 絶対に1行なので１に */
+    line-height: 1;
+    /* 検証ツールで、line-heightを１にした後、paddingで調整 */
+    padding: rem(23) 0;
+}
