@@ -1,0 +1,19 @@
+@use 'global' as *;
+
+.footer-block-nav {
+
+}
+
+.footer-block-nav__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(20);
+}
+
+.footer-block-nav__item a {
+    color: $white;
+    font-size: rem(12);
+    font-weight: $bold;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+}

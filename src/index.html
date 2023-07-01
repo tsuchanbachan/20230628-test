@@ -34,9 +34,79 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header>
 
+  <!-- ヘッダー（3-2 14分20秒） -->
+  <header class="l-header p-header">
+    <div class="p-header__inner">
+      <h1 class="p-header__logo">
+        <a href="#" class="p-header__logoLink">CodeUps</a>
+      </h1>
+
+      <!-- ハンバーガーボタン -->
+      <div class="p-header__drawer c-hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div><!-- /.header__drawer -->
+
+      <!-- PC版のナビ -->
+      <nav class="p-header__pc-nav pc-nav">
+        <ul class="pc-nav__items">
+          <li class="pc-nav__item">
+            <a href="#">NEWS</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">SERVICE</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">WORKS</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">COMPANY</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">RECRUIT</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">CONTACT</a>
+          </li>
+        </ul><!-- /.pc-nav__items -->
+      </nav><!-- /.p-header__pc-nav -->
+
+      <!-- スマホ用ナビ -->
+      <nav class="p-header__sp-nav sp-nav js-sp-nav">
+        <ul class="sp-nav__items">
+          <li class="sp-nav__item">
+            <a href="">MORE</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="">NEWS</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="">SERVICE</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="">WORKS</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="">COMPANY</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="">RECRUIT</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="">CONTACT</a>
+          </li>
+        </ul><!-- /.sp-nav__items -->
+
+      </nav><!-- /.p-header__sp-nav -->
+
+    </div><!-- /.header__inner -->
   </header>
+
+
+
+
   <main>
     <div class="inner">
       <p class="test">変更のテスト</p>
@@ -53,7 +123,36 @@
       <!-- moduleに_button.scss作成 -->
       <a href="#" class="button">more</a>
 
+      
     </div>
+
+    <!-- フッター -->
+    <!-- フッター用に３ファイル作成。「_footer-block-nav」「_footer-block」「_footer-layout」 -->
+    <!-- 「l-footer」「p-footer」の代わり -->
+    <div class="footer-layout footer-block">
+  
+      <!-- padding用 -->
+      <div class="footer-block__inner">
+  
+        <nav class="footer-block__nav footer-block-nav">
+          <ul class="footer-block-nav__items">
+            <li class="footer-block-nav__item"><a href="#">HOME</a></li>
+            <li class="footer-block-nav__item"><a href="#">NEWS</a></li>
+            <li class="footer-block-nav__item"><a href="#">SERVICE</a></li>
+            <li class="footer-block-nav__item"><a href="#">WORKS</a></li>
+            <li class="footer-block-nav__item"><a href="#">COMPANY</a></li>
+            <li class="footer-block-nav__item"><a href="#">RECRUIT</a></li>
+            <li class="footer-block-nav__item"><a href="#">CONTACT</a></li>
+          </ul>
+        </nav><!-- /.footer-block--nav -->
+  
+        <div class="footer-block__copyright">
+          <small>&copy; CodeUps</small>
+        </div><!-- /.footer-block__copyright -->
+  
+      </div><!-- /.footer-block__inner -->
+    </div><!-- /.footer -->
+
   </main>
   <footer>
 
