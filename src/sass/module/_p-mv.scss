@@ -1,0 +1,39 @@
+@use 'global' as *;
+
+.p-mv {
+    position: relative;
+    height: 100vh;
+    background-image: url(../images/common/img01sp/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p-mv__inner {
+    // padding: 0 0 rem(30) rem(50);
+}
+
+.p-mv_header {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: rem(50);
+    color: $white;
+}
+
+.p-ma__title {
+    font-size: rem(48);
+    font-weight: $bold;
+    font-family: $english-family;
+    line-height: 1.2916667;
+}
+
+.p-mv__subtitle {
+    font-size: rem(16);
+    letter-spacing: 0.108em;
+    line-height: 1.8125;
+    margin-top: rem(20);
+}
+
+.p-mv__btn {
+    margin-top: rem(50);
+}
