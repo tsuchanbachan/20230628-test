@@ -12,7 +12,7 @@
     // padding: 0 0 rem(30) rem(50);
 }
 
-.p-mv_header {
+.p-mv__header {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -20,7 +20,7 @@
     color: $white;
 }
 
-.p-ma__title {
+.p-mv__title {
     font-size: rem(48);
     font-weight: $bold;
     font-family: $english-family;
@@ -36,4 +36,35 @@
 
 .p-mv__btn {
     margin-top: rem(50);
+}
+
+.p-mv__scroll {
+    font-size: rem(12);
+    letter-spacing: 0.08em;
+    font-family: $english-family;
+    font-weight: $bold;
+    color: $white;
+    display: inline-block;
+    position: absolute;
+    transform: rotate(90deg);
+
+    right: 0;
+    bottom: 78px;
+}
+
+/* 縦書き「スクロール」のところの縦線 */
+.p-mv__scroll span {
+    position: relative;
+
+}
+
+.p-mv__scroll span::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 50px;
+    background-color: $white;
+    transform: rotate(90deg);
+    right: -35px;
+    bottom: -17px;
 }

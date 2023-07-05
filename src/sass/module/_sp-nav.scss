@@ -11,6 +11,9 @@
     width: 100%;
     height: 100vh;
     background-color: #642390;
+
+    /* １でも表示はされそう！？ */
+    z-index: 1;
 }
 
 .sp-nav.is-active {
@@ -18,7 +21,7 @@
 }
 
 .sp-nav__items {
-    /* 縦報告のセンタリング */
+    /* 縦方向のセンタリング */
     display: flex;
     align-items: center;
     justify-content: center;

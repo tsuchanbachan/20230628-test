@@ -1,9 +1,17 @@
 @use 'global' as *;
 
+/* メインビューは含まないが、
+ロゴ付きのヘッダー、スマホのドロワーメニューまでを含む。
+z-index:1000 */
 .p-header {
     height: rem(62);
-    background-color: #21054D;
+    // background-color: #21054D;
+    background-color: transparent;
     z-index: 1000;
+
+    /* ヘッダーの固定 */
+    position: fixed;
+    width: 100%;
 }
 
 .p-header__inner {
@@ -34,4 +42,8 @@
 /* ロゴ */
 .p-header__logoLink {
     color: $white;
+    font-size: rem(18);
+
+    /* 縦方向の中央 */
+    display: block;
 }
