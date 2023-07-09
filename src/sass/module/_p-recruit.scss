@@ -1,0 +1,54 @@
+@use 'global' as *;
+
+/* 画像を幅いっぱいに */
+.p-recruit__inner.l-inner {
+    padding: 0;
+}
+
+/* -- section制作実績の背景色と同じやり方で、
+幅いっぱいを実現できた！ -- */
+// .p-recruit__img {
+//     /* 左右いっぱいに（右にはみ出ている） */
+//     width: 100vw;
+//     /* 位置調整 */
+//     margin-left: calc(50% - 50vw);
+// }
+
+.p-recruit__text {
+    text-align: center;
+    font-size: rem(14);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1.79;
+}
+
+/* 画像の、横幅の変動に対応する */
+/* aspect-ratioはまだ対応していないブラウザもあるので。 */
+.p-recruit__img {
+    position: relative;
+}
+.p-recruit__img::before {
+    content: "";
+    display: block;
+    padding-top: 37.3333333%;
+}
+.p-recruit__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 背景色 */
+.p-recruit__contents {
+    background-color: #f7f7f7;
+    padding: rem(60) rem(50);
+}
+
+.p-recruit__btn {
+    text-align:center;
+    margin-top: rem(20);
+}

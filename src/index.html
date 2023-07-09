@@ -28,9 +28,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- css -->
+  <!-- スワイパー -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- スワイパー -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -128,7 +133,7 @@
 
 
   <main>
-    <div class="inner">
+    <!-- <div class="inner"> -->
       <!-- <p class="test">変更のテスト</p>
       <p class="test--english">test</p> -->
 
@@ -200,9 +205,9 @@
         </section><!-- /.l-news -->
 
 
-      <!-- -------
-      セクション・サービス
-      ------- -->
+        <!-- -------
+        セクション・サービス
+        ------- -->
         <section class="l-service p-service">
           <div class="p-service__inner l-inner">
 
@@ -257,9 +262,71 @@
           </div><!-- /.p-service__inner -->
         </section>
 
-      <!-- -------
-      セクション・サービス
-      ------- -->
+        <!-- -------
+        セクション・WORKS
+        ------- -->
+        <section class="l-works p-works">
+          <div class="p-works__inner l-inner">
+            <div class="p-works__content">
+              <div class="p-works__images">
+                <!-- Swiper -->
+                <!-- 「.mySwiper」→「js-works-swiper」へ。JSも変更すること！ -->
+                <div class="swiper js-works-swiper">
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide p-works__img">
+                      <!-- <img src="./assets/images/common/img01sp/works-1.png" alt=""> -->
+                      <img src="./assets/images/common/img01sp/hero.jpg" alt="">
+                    </div>
+
+                    <div class="swiper-slide p-works__img">
+                      <img src="./assets/images/common/img01sp/service-1.jpg" alt="">
+                    </div>
+
+                    <div class="swiper-slide p-works__img">
+                      <img src="./assets/images/common/img01sp/service-2.jpg" alt="">
+                    </div>
+
+                  </div>
+                </div><!-- /.swiper -->
+
+                <!-- スワイパーのページネーション -->
+                <!-- クラス「.js-works-pagination」を追加。JSのクラス名も変更 -->
+                <!-- 当初は、「swiper js-works-swiper」内から外に出す。 -->
+                <div class="swiper-pagination js-works-pagination"></div>
+
+              </div><!-- /.p-works__images -->
+
+              <div class="p-works__text-body">
+                <!-- セクション・タイトル -->
+                <div class="p-company__title section-header">
+                  <p class="section-header__english-title">WORKS</p>
+                  <h2 class="section-header__ja-title">制作実績</h2>
+                </div><!-- /.p-company__title -->
+
+                <!-- タイトルの下部分 -->
+                <div class="p-works__text-block">
+                  <p class="p-works__text">
+                    様々なジャンルのWebサイト制作が可能です。<br>ご購入やお申込み数の増加などを実現します！                  
+                  </p><!-- /.p-works-text -->
+                </div><!-- /.p-works__content -->
+                
+                <!-- ボタン -->
+                <div class="p-works__btn">
+                  <a href="#" class="button">more</a>
+                </div><!-- /.p-company__btn -->
+                
+              </div><!-- /.p-works__text-body -->
+            </div><!-- /.p-works__content -->
+            
+
+          </div><!-- /.p-works__inner -->
+        </section>
+
+
+        <!-- -------
+        セクション・COMPANY
+        ------- -->
         <section class="l-company p-company">
           <div class="p-company__inner l-inner">
         
@@ -295,6 +362,68 @@
         </section>
 
 
+        <!-- -------
+        セクション・recruit
+        ------- -->
+        <section class="l-recruit p-recruit">
+          <div class="p-recruit__inner l-inner">
+        
+            <div class="p-recruit__img">
+              <img src="./assets/images/common/img01sp/recruit.jpg" alt="">
+            </div><!-- /.p-recruit__img -->
+
+            <div class="p-recruit__contents">
+              
+              <!-- セクション・タイトル -->
+              <div class="p-recruit__title section-header">
+                <p class="section-header__english-title">RECRUIT</p>
+                <h2 class="section-header__ja-title">採用情報</h2>
+              </div><!-- /.p-recruit__title -->
+
+              <div class="p-recruit__text-block">
+                <p class="p-recruit__text">
+                  私たちと一緒に働きませんか？
+                </p><!-- /.p-recruit__text -->
+              </div><!-- /.p-recruit__text-block -->
+              
+              <!-- ボタン -->
+              <div class="p-recruit__btn">
+                <a href="#" class="button">more</a>
+              </div><!-- /.p-recruit__btn -->
+              
+            </div><!-- /.p-recruit__contents -->
+          </div><!-- /.p-recruit__inner -->
+        </section>
+
+
+        <!-- -------
+        セクション・contact
+        ------- -->
+        <section class="l-contact p-contact">
+          <div class="p-contact__inner l-inner">
+        
+            <!-- セクション・タイトル -->
+            <div class="p-contact__title section-header">
+              <p class="section-header__english-title">CONTACT</p>
+              <h2 class="section-header__ja-title">お問い合わせ</h2>
+            </div><!-- /.p-contact__title -->
+        
+            <div class="p-contact__contents">
+              <div class="p-contact__text-block">
+                <p class="p-contact__text">
+                  Webサイトの制作のご依頼やお見積りなど、<br>
+                  お気軽にご相談ください。  
+                </p><!-- /.p-contact__text -->
+              </div><!-- /.p-contact__text-block -->
+              
+              <!-- ボタン -->
+              <div class="p-contact__btn">
+                <a href="#" class="button">more</a>
+              </div><!-- /.p-contact__btn -->
+            </div><!-- /.p-contact__contents -->
+
+          </div><!-- /.p-contact__inner -->
+        </section>
 
       <!-- K! セクションタイトル -->
       <!-- moduleに_section-header.scssを作成 -->
@@ -306,7 +435,8 @@
       <!-- ボタン -->
       <!-- moduleに_button.scss作成 -->
       <!-- <a href="#" class="button">more</a> -->
-    </div><!-- /.inner -->
+    <!-- </div> -->
+    <!-- /.inner -->
 
     <!-- フッター -->
     <!-- フッター用に３ファイル作成。「_footer-block-nav」「_footer-block」「_footer-layout」 -->

@@ -1,0 +1,64 @@
+@use 'global' as *;
+
+.p-works {
+
+}
+
+
+.p-works__text {
+    text-align: center;
+    font-size: rem(14);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1.79;
+}
+
+/* ボタンの位置、margin-top */
+.p-works__btn {
+    text-align: center;
+    margin-top: rem(30);
+}
+
+.p-works__text-body {
+    /* 背景色 */
+    background-color: #f0f0f0;
+
+    /* 背景を左右いっぱい（右にはみ出ている） */
+    width: 100vw;
+    /* 位置調整している。よく意味はわからない！ */
+    margin-left: calc(50% - 50vw);
+
+    padding-bottom: rem(60);
+    padding-top: rem(150);
+    margin-top: rem(-110);
+
+}
+
+.p-works__images {
+    position: relative;
+}
+
+.p-works__text-block {
+    margin-top: rem(30);
+}
+
+/* スライダー内画像の差替可能性にも対応。比率指定 */
+.p-works__img {
+    position: relative;
+}
+.p-works__img::before {
+    content: "";
+    /* 擬似要素はinline＝高さ取れない。block化が必要 */
+    display: block;
+    padding-top: 68.955%;
+}
+.p-works__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
